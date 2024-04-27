@@ -29,7 +29,10 @@ const Nav = () => {
         <TransitionLink href="/about" label="About" />
         </div>
         <div className='hover:bg-blue-300  py-1 px-2 rounded'>
-        <TransitionLink href="mailto:arifahmmadsumon@gmail.com?subject=Regarding Your Website" label="Contact" />
+        <Link className='decoration-transparent text-xl text-neutral-900 hover:text-neutral-700' href="mailto:arifahmmadsumon@gmail.com?subject=Regarding Your 
+Website">
+       Contact
+        </Link>
         </div>
 </div>
 
@@ -88,12 +91,17 @@ const Nav = () => {
                         <Link href="/" className="block text-black px-3 decoration-transparent py-2 rounded-md hover:bg-gray-200">
                             Home
                         </Link>
+                        <Link href="/projects" className="block text-black 
+px-3 decoration-transparent py-2 rounded-md 
+hover:bg-gray-200">
+     Projects
+ </Link>
                         <Link href="/about" className="block text-black px-3 decoration-transparent py-2 rounded-md hover:bg-gray-200">
                             About
                         </Link>
-                        <Link href="/projects" className="block text-black px-3 decoration-transparent py-2 rounded-md hover:bg-gray-200">
-                            Projects
-                        </Link>
+                       
+                       
+                       
                         <Link href="/contact" className="block text-black px-3 decoration-transparent py-2 rounded-md hover:bg-gray-200">
                             Contact
                         </Link>

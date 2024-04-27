@@ -1,13 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
 import Img from "../../public/images/ss-removebg.png";
-import { Button } from 'react-bootstrap';
+
 import { motion } from "framer-motion";
 import { LampContainer } from "../component/ui/lamp";
 import CircularTextWithButton from '../component/CircularText';
 import Link from 'next/link'; // Import Next.js Link
 import ContactForm from '../component/ContactForm';
-
+import { Button } from "../component/ui/moving-border";
 const HeroSection = () => {
   return (
     <section className='hero relative overflow-hidden'>
@@ -28,16 +28,16 @@ const HeroSection = () => {
                 As a passionate frontend developer, I bring designs to life with clean, efficient code. I specialize in  creating visually stunning and highly <br /> functional  web applications that deliver exceptional user experiences.
               </p>
               <div className='flex gap-4 mt-8'>
-              <button  className=" bg-blue-500 text-white px-4 py-2 cursor-pointer  rounded-full focus:outline-none">
-                    <Link className='text-decoration-none text-white ' href="">
+              <Button  className=" bg--500 text-white px-4 py-2 cursor-pointer  rounded-full focus:outline-none">
+                    <Link className='text-decoration-none text-black text-xl ' href="">
                             Resume
                     </Link>
-              </button>
-              <button  className=" bg-blue-500 text-white px-4 py-2  rounded-full focus:outline-none cursor-pointer">
-      <Link className='text-decoration-none text-white ' href="mailto:arifahmmadsumon@gmail.com?subject=Regarding Your Website">
+              </Button>
+              <Button  className=" bg--500 text-white px-4 py-2  rounded-full focus:outline-none cursor-pointer">
+      <Link className='text-decoration-none text-black text-xl ' href="mailto:arifahmmadsumon@gmail.com?subject=Regarding Your Website">
              Contact
       </Link>
-          </button>
+          </Button>
               </div>
             </div>
 
