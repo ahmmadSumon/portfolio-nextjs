@@ -14,7 +14,7 @@ const technologies = [
 ];
 
 const TechBox: React.FC<TechBoxProps> = ({ tech }) => {
-  const colorMap = {
+  const colorMap: Record<string, string> = {
     HTML: 'bg-gradient-to-r from-red-500 to-pink-500', // Gradient for HTML
     CSS: 'bg-gradient-to-r from-blue-500 to-teal-400', // Gradient for CSS
     Tailwind: 'bg-gradient-to-r from-green-500 to-lime-500', // Gradient for Tailwind
