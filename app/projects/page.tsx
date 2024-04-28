@@ -4,7 +4,14 @@ import React from "react";
 import Card from "../component/Card";
 import Image from "next/image"; // Import the Next.js Image component
 import { InfiniteMovingCards } from "../component/ui/infinite-moving-cards";
-
+interface CardProps {
+  title: string;
+  paragraph: string;
+  imageSrc: string;
+  projectLink: string;
+  githubLink: string;
+  link: string; // Add link prop
+}
 
 // Importing images
 import image1 from "../../public/card/2 (1).png";

@@ -10,7 +10,7 @@ interface CardProps {
   githubLink: string;
 }
 
-const Card = ({ title, paragraph, imageSrc, projectLink, githubLink } : CardProps) => {
+const Card: React.FC<CardProps>= ({ title, paragraph, imageSrc, projectLink, githubLink } : CardProps) => {
   return (
     <div className="max-w-xl rounded-lg overflow-hidden shadow-lg mx-4 my-8 transition transform hover:shadow-xl hover:scale-105">
       <Image src={imageSrc} alt={title} className="w-full h-48 object-cover" />
