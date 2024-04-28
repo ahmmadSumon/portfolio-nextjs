@@ -4,6 +4,7 @@ import React from "react";
 import Card from "../component/Card";
 import Image from "next/image"; // Import the Next.js Image component
 import { InfiniteMovingCards } from "../component/ui/infinite-moving-cards";
+
 interface CardProps {
   title: string;
   paragraph: string;
@@ -22,11 +23,13 @@ import image5 from "../../public/card/2 (5).png";
 
 const Project = () => {
   // Define card data
-  const cardData = [
+  const cardData: CardProps[] = [
     {
       title: "An e-Commerce website",
       paragraph: "Build with react",
       imageSrc: image1,
+      projectLink: "https://example.com/project1", // Provide a project link
+    githubLink: "https://github.com/user/repo1", // Provide a GitHub link
       link: "https://example.com/card1",
     },
     {
@@ -34,12 +37,16 @@ const Project = () => {
       paragraph:
         "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       imageSrc: image2,
+      projectLink: "https://example.com/project1", // Provide a project link
+    githubLink: "https://github.com/user/repo1", // Provide a GitHub link
       link: "https://example.com/card2",
     },
     {
       title: "Travel website",
       paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       imageSrc: image3,
+      projectLink: "https://example.com/project1", // Provide a project link
+    githubLink: "https://github.com/user/repo1", // Provide a GitHub link
       link: "https://example.com/card1",
     },
     {
@@ -47,12 +54,16 @@ const Project = () => {
       paragraph:
         "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       imageSrc: image4,
+      projectLink: "https://example.com/project1", // Provide a project link
+    githubLink: "https://github.com/user/repo1", // Provide a GitHub link
       link: "https://example.com/card2",
     },
     {
       title: "Coaching website",
       paragraph: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       imageSrc: image5,
+      projectLink: "https://example.com/project1", // Provide a project link
+    githubLink: "https://github.com/user/repo1", // Provide a GitHub link
       link: "https://example.com/card1",
     },
     {
@@ -60,6 +71,8 @@ const Project = () => {
       paragraph:
         "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       imageSrc: image5,
+      projectLink: "https://example.com/project1", // Provide a project link
+    githubLink: "https://github.com/user/repo1", // Provide a GitHub link
       link: "https://example.com/card2",
     },
   ];
@@ -85,7 +98,9 @@ const Project = () => {
             key={index}
             title={card.title}
             paragraph={card.paragraph}
-            imageSrc={card.imageSrc.src}
+            imageSrc={card.imageSrc}
+            projectLink={card.projectLink} // Make sure projectLink is included
+            githubLink={card.githubLink} // Make sure githubLink is included
             link={card.link}
           />
         ))}
