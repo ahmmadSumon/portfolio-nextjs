@@ -78,7 +78,7 @@ const Project = () => {
             key={index}
             title={card.title}
             paragraph={card.paragraph}
-            imageSrc={card.imageSrc}
+            imageSrc={card.imageSrc.src}
             link={card.link}
           />
         ))}
