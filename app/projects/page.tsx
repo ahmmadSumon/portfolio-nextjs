@@ -8,7 +8,7 @@ import { InfiniteMovingCards } from "../component/ui/infinite-moving-cards";
 interface CardProps {
   title: string;
   paragraph: string;
-  imageSrc: string;
+  imageSrc: StaticImageData;
   projectLink: string;
   githubLink: string;
   link: string; // Add link prop
