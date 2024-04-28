@@ -102,7 +102,7 @@ hover:bg-gray-200">
                        
                        
                        
-                        <Link href="/contact" className="block text-black px-3 decoration-transparent py-2 rounded-md hover:bg-gray-200">
+                        <Link href="mailto:arifahmmadsumon@gmail.com?subject=Regarding Your Website" className="block text-black px-3 decoration-transparent py-2 rounded-md hover:bg-gray-200">
                             Contact
                         </Link>
                     </div>
