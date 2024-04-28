@@ -28,7 +28,7 @@ const Project = () => {
     {
       title: "An e-Commerce website",
       paragraph: "Build with react",
-      imageSrc: image1,
+      imageSrc: image1 ,
       projectLink: "https://example.com/project1", // Provide a project link
     githubLink: "https://github.com/user/repo1", // Provide a GitHub link
       link: "https://example.com/card1",
@@ -99,7 +99,7 @@ const Project = () => {
             key={index}
             title={card.title}
             paragraph={card.paragraph}
-            imageSrc={card.imageSrc}
+            imageSrc={card.imageSrc.src}
             projectLink={card.projectLink} // Make sure projectLink is included
             githubLink={card.githubLink} // Make sure githubLink is included
             link={card.link}
