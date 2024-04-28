@@ -12,7 +12,7 @@ interface CardProps {
   imageSrc: StaticImageData;
   projectLink: string;
   githubLink: string;
-  link: string; // Add link prop
+ 
 }
 
 // Importing images
@@ -31,7 +31,7 @@ const Project = () => {
       imageSrc: image1 ,
       projectLink: "https://example.com/project1", // Provide a project link
     githubLink: "https://github.com/user/repo1", // Provide a GitHub link
-      link: "https://example.com/card1",
+      
     },
     {
       title: "Luxury Sell website",
@@ -40,7 +40,7 @@ const Project = () => {
       imageSrc: image2,
       projectLink: "https://example.com/project1", // Provide a project link
     githubLink: "https://github.com/user/repo1", // Provide a GitHub link
-      link: "https://example.com/card2",
+   
     },
     {
       title: "Travel website",
@@ -48,7 +48,7 @@ const Project = () => {
       imageSrc: image3,
       projectLink: "https://example.com/project1", // Provide a project link
     githubLink: "https://github.com/user/repo1", // Provide a GitHub link
-      link: "https://example.com/card1",
+      
     },
     {
       title: "Golf Booking website",
@@ -57,7 +57,7 @@ const Project = () => {
       imageSrc: image4,
       projectLink: "https://example.com/project1", // Provide a project link
     githubLink: "https://github.com/user/repo1", // Provide a GitHub link
-      link: "https://example.com/card2",
+ 
     },
     {
       title: "Coaching website",
@@ -65,7 +65,7 @@ const Project = () => {
       imageSrc: image5,
       projectLink: "https://example.com/project1", // Provide a project link
     githubLink: "https://github.com/user/repo1", // Provide a GitHub link
-      link: "https://example.com/card1",
+ 
     },
     {
       title: "Kid e-commerce website",
@@ -74,7 +74,7 @@ const Project = () => {
       imageSrc: image5,
       projectLink: "https://example.com/project1", // Provide a project link
     githubLink: "https://github.com/user/repo1", // Provide a GitHub link
-      link: "https://example.com/card2",
+
     },
   ];
   const testimonials = [
@@ -102,7 +102,6 @@ const Project = () => {
             imageSrc={card.imageSrc.src}
             projectLink={card.projectLink} // Make sure projectLink is included
             githubLink={card.githubLink} // Make sure githubLink is included
-            link={card.link}
           />
         ))}
       </div>

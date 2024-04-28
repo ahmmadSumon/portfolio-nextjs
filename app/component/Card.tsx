@@ -8,13 +8,13 @@ interface CardProps {
   imageSrc: string;
   projectLink: string;
   githubLink: string;
-  link: string;
+
 }
 
-const Card: React.FC<CardProps>= ({ title, paragraph, imageSrc, projectLink, githubLink, link } : CardProps) => {
+const Card: React.FC<CardProps>= ({ title, paragraph, imageSrc, projectLink, githubLink } : CardProps) => {
   return (
     <div className="max-w-xl rounded-lg overflow-hidden shadow-lg mx-4 my-8 transition transform hover:shadow-xl hover:scale-105">
-      <Image src={imageSrc} alt={title} className="w-full h-48 object-cover" />
+      <Image src={imageSrc} width={300} height={200} layout="responsive" alt={title} className="w-full h-48 object-cover" />
       <div className="p-6 bg-white">
         <div className="font-semibold text-lg mb-2">{title}</div>
         <p className="text-gray-600 text-base">{paragraph}</p>
@@ -36,16 +36,7 @@ hover:bg-gray-700 transition"
 >
   GitHub Link
 </a>
-          {githubLink && (
-            <a
-              href={githubLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition"
-            >
-              GitHub
-            </a>
-          )}
+
         </div>
       </div>
     </div>
@@ -58,7 +49,7 @@ Card.propTypes = {
   imageSrc: PropTypes.string.isRequired,
   projectLink: PropTypes.string.isRequired,
   githubLink: PropTypes.string.isRequired, 
-  link: PropTypes.string.isRequired, 
+  
 };
 
 export default Card;
