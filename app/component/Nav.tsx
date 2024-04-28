@@ -29,7 +29,7 @@ const Nav = () => {
         <TransitionLink href="/about" label="About" />
         </div>
         <div className='hover:bg-blue-300  py-1 px-2 rounded'>
-        <Link className='decoration-transparent text-xl text-neutral-900 hover:text-neutral-700' href="mailto:arifahmmadsumon@gmail.com?subject=Regarding Your 
+        <Link className='decoration-transparent text-xl text-neutral-900 hover:text-neutral-700 ' href="mailto:arifahmmadsumon@gmail.com?subject=Regarding Your 
 Website">
        Contact
         </Link>

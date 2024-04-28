@@ -2,7 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Image from 'next/image';
 
-const Card = ({ title, paragraph, imageSrc, projectLink, githubLink }) => {
+interface CardProps {
+  title: string;
+  paragraph: string;
+  imageSrc: string;
+  projectLink: string;
+  githubLink: string;
+}
+
+const Card = ({ title, paragraph, imageSrc, projectLink, githubLink } : CardProps) => {
   return (
     <div className="max-w-xl rounded-lg overflow-hidden shadow-lg mx-4 my-8 transition transform hover:shadow-xl hover:scale-105">
       <Image src={imageSrc} alt={title} className="w-full h-48 object-cover" />

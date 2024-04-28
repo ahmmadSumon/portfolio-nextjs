@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import Link from 'next/link'
 const CircularTextWithButton = ({ duration = 10, buttonText = 'Hire Me' }) => {
-    const textRef = useRef(null);
+    const textRef = useRef<HTMLDivElement>(null);
     const text = '- Arif - Frontend Developer';
 
     useEffect(() => {
@@ -26,8 +26,10 @@ const CircularTextWithButton = ({ duration = 10, buttonText = 'Hire Me' }) => {
                 `;
             }).join('');
             
-            // Set the innerHTML of textRef with the calculated HTML
-            textRef.current.innerHTML = charactersHTML;
+            if (textRef.current && textRef.current instanceof HTMLElement) {
+                textRef.current.innerHTML = charactersHTML;
+              }
+              
         }
     }, [text]);
 
