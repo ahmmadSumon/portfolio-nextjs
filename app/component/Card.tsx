@@ -53,10 +53,10 @@ hover:bg-gray-700 transition"
 
 Card.propTypes = {
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  paragraph: PropTypes.string.isRequired,
   imageSrc: PropTypes.string.isRequired,
   projectLink: PropTypes.string.isRequired,
-  githubLink: PropTypes.string,
+  githubLink: PropTypes.string.isRequired, 
 };
 
 export default Card;
