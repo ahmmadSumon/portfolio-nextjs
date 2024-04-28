@@ -1,5 +1,7 @@
 import React from 'react';
-
+interface TechBoxProps {
+  tech: string;
+}
 const technologies = [
   'HTML',
   'CSS',
@@ -11,7 +13,7 @@ const technologies = [
   'Figma',
 ];
 
-const TechBox = ({ tech }) => {
+const TechBox: React.FC<TechBoxProps> = ({ tech }) => {
   const colorMap = {
     HTML: 'bg-gradient-to-r from-red-500 to-pink-500', // Gradient for HTML
     CSS: 'bg-gradient-to-r from-blue-500 to-teal-400', // Gradient for CSS
@@ -23,13 +25,11 @@ const TechBox = ({ tech }) => {
     Figma: 'bg-gradient-to-r from-orange-500 to-amber-500', // Gradient for Figma
   };
 
-  const getColor = (tech) => colorMap[tech] || 'bg-gray-200'; // Fallback
+  const colorClass = colorMap[tech] || '';
 
   return (
     <div
-      className={`flex items-center justify-center w-full sm:w-auto h-full p-6 rounded-lg shadow-md text-white font-bold ${getColor(
-        tech
-      )}`}
+      className={`flex items-center justify-center w-full sm:w-auto h-full p-6 rounded-lg shadow-md text-white font-bold ${colorClass}`}
     >
       {tech}
     </div>
