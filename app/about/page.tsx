@@ -11,7 +11,7 @@ import { AuroraBackground } from '../component/ui/aurora-background';
 import { motion } from "framer-motion";
 const Page = () => {
   return (
-    <div className='py-36 md:pt-0'>
+    <div className='py-36 '>
         
       <motion.div
       initial={{ opacity: 0.0, y: 40 }}
@@ -28,7 +28,7 @@ transition={{
     <div className=' py-20'>
    
       <div className="container ">
-      <AuroraBackground>
+   
         <div className="row">
           <div className="col-md-6">
             <h5>BIOGRAPHY</h5>
@@ -52,7 +52,7 @@ transition={{
          
          
         </div>
-        </AuroraBackground>
+  
       </div>
       
       <div className="text-center pt-10">
