@@ -69,7 +69,7 @@ const HeroSection = () => {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="sm:pt-20 "
+        className=""
       >
         <ContactForm/>
       </motion.div>
