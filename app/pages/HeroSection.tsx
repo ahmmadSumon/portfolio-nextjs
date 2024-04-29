@@ -60,7 +60,7 @@ const HeroSection = () => {
       <div className=' '>
 
     
-      <LampContainer className='md:pt-20 sm:pt-52 '>
+      <LampContainer className='md:pt-20 sm:pt-52'>
       <motion.div
         initial={{ opacity: 0.5, y: 0 }}
         whileInView={{ opacity: 1, y: 100 }}
