@@ -11,11 +11,11 @@ import { AuroraBackground } from '../component/ui/aurora-background';
 import { motion } from "framer-motion";
 const Page = () => {
   return (
-    <div className='pt-36 md:pt-0'>
+    <div className='py-36 md:pt-0'>
         
       <motion.div
       initial={{ opacity: 0.0, y: 40 }}
-whileInView={{ opacity: 1, y: 0 }}
+whileInView={{ opacity: 1.2, y: 0 }}
 transition={{
   delay: 0.3,
   duration: 0.8,
@@ -25,9 +25,9 @@ transition={{
 >
     
 
-    <div className=''>
+    <div className=' py-20'>
    
-      <div className="container  ">
+      <div className="container ">
       <AuroraBackground>
         <div className="row">
           <div className="col-md-6">
