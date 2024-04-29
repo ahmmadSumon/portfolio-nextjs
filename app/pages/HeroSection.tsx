@@ -57,7 +57,10 @@ const HeroSection = () => {
       <div className='absolute bottom-50 left-0 mb-16 mr-16 mt-10 hidden md:block '>
         <CircularTextWithButton/> {/* Positioned strategically */}
       </div>
-      <LampContainer className=' md:pt-[5vh] mt'>
+      <div className=' '>
+
+    
+      <LampContainer className=' pt-20 '>
       <motion.div
         initial={{ opacity: 0.5, y: 0 }}
         whileInView={{ opacity: 1, y: 100 }}
@@ -66,11 +69,12 @@ const HeroSection = () => {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className=" mt-52 "
+        className=" "
       >
         <ContactForm/>
       </motion.div>
     </LampContainer>
+    </div>
     </section>
   );
 };
