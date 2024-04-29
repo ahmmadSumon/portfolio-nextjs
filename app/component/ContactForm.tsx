@@ -41,7 +41,7 @@ const ContactForm = () => {
 
   return (
     <section className="container mx-auto px-16 py-16 ">
-      <h2 className="text-5xl font-bold mb-8 text-white  text-center ">Get in Touch</h2>
+      <h2 className="text-5xl font-bold mb-8 text-white text-center ">Get in Touch</h2>
       <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
         <div className="flex flex-col">
           <label htmlFor="name" className="text-sm text-white font-medium mb-2">
